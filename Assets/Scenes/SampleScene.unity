@@ -532,6 +532,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectAnimated: {fileID: 0}
   player: {fileID: 5284141778327351652}
+  objectCarried: {fileID: 2733752637768779146, guid: 1a6c8dcf101ed37449e93dfb6a612bfa, type: 3}
+  playerGetObject: {fileID: 1437347275}
 --- !u!4 &172069033 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5155357071425341394, guid: a98587cbc1bc4db4e8a2530785da2a47, type: 3}
@@ -689,6 +691,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectAnimated: {fileID: 0}
   player: {fileID: 5284141778327351652}
+  objectCarried: {fileID: 0}
+  playerGetObject: {fileID: 1437347275}
 --- !u!1 &198615304
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,6 +926,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectAnimated: {fileID: 0}
   player: {fileID: 5284141778327351652}
+  objectCarried: {fileID: 1928264535415205360, guid: b032fd03a624d904e8843dc9c24e4c9f, type: 3}
+  playerGetObject: {fileID: 1437347275}
 --- !u!1 &296826705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1361,7 +1367,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571421987}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f076e171b0c684f49a99e733c424067b, type: 3}
   m_Name: 
@@ -1376,13 +1382,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571421987}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4aa23868261190409c1db241bdb19d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectAnimated: {fileID: 0}
   player: {fileID: 5284141778327351652}
+  objectCarried: {fileID: 3989336428088125589, guid: 970888f2eb1bc1b46a3ae4f73aede8bf, type: 3}
+  playerGetObject: {fileID: 1437347275}
 --- !u!1001 &616066316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1927,6 +1935,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectAnimated: {fileID: 0}
   player: {fileID: 5284141778327351652}
+  objectCarried: {fileID: 7163705250107990070, guid: a38d927bf1fdb2d4b900ec1b138f087b, type: 3}
+  playerGetObject: {fileID: 1437347275}
 --- !u!1 &947764611
 GameObject:
   m_ObjectHideFlags: 0
