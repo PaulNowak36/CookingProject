@@ -12,16 +12,6 @@ public class NewInteracting : MonoBehaviour
 
     public PlayerCarryingObject playerGetObject;
 
-    //public string trueBool = "myTrueBool";
-    //public string falseBool = "myFalseBool";
-
-    //public bool trashOpened;
-
-    //public bool knifeRaised;
-    //public bool cutFood;
-
-    //public bool playerCarrying;
-
     // Start is called before the first frame update
     void Start()
     {
