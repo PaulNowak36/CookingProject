@@ -37,11 +37,18 @@ public class NewInteracting : MonoBehaviour
             {
                 objectAnimated.SetBool("Food being cut", true);
                 player.SetBool("Carrying", false);
+                Invoke("StopCuttingFood", 3.0f);
             }
             if (gameObject.tag == "Trash")
             {              
                 player.SetBool("Carrying", false);
             }        
         }
+    }
+
+    private void StopCuttingFood()
+    {
+        objectAnimated.SetBool("Food being cut", false);
+        objectAnimated.SetBool("Raised Knife", false);
     }
 }

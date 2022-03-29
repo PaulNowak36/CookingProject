@@ -221,7 +221,6 @@ Transform:
   - {fileID: 1235960556}
   - {fileID: 1664021904}
   - {fileID: 1455287512}
-  - {fileID: 554647543}
   m_Father: {fileID: 1130560231}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1311,8 +1310,8 @@ Transform:
   m_Children:
   - {fileID: 1071792568}
   - {fileID: 705766812}
-  m_Father: {fileID: 60724291}
-  m_RootOrder: 4
+  m_Father: {fileID: 1130560231}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &571421987
 GameObject:
@@ -2101,9 +2100,15 @@ Transform:
   - {fileID: 60724291}
   - {fileID: 65502466}
   - {fileID: 2993504128398970747}
+  - {fileID: 554647543}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1155344615 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7369125726083207562, guid: a530542d5cc098a49b96cd4523026d38, type: 3}
+  m_PrefabInstance: {fileID: 1877800209}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1156849118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2506,6 +2511,27 @@ Transform:
   m_Father: {fileID: 60724291}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1261424957 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675555555592565585, guid: a530542d5cc098a49b96cd4523026d38, type: 3}
+  m_PrefabInstance: {fileID: 1585684944}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1261424961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261424957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4aa23868261190409c1db241bdb19d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectAnimated: {fileID: 1521210164}
+  player: {fileID: 5284141778327351652}
+  objectCarried: {fileID: 0}
+  playerGetObject: {fileID: 0}
 --- !u!1 &1383582241
 GameObject:
   m_ObjectHideFlags: 0
@@ -3148,6 +3174,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505212152}
   m_Mesh: {fileID: -6074028379145110453, guid: 6a4e254c0b0d9214ea7b53f9c0c43b10, type: 3}
+--- !u!95 &1521210164 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7369125726083207562, guid: a530542d5cc098a49b96cd4523026d38, type: 3}
+  m_PrefabInstance: {fileID: 1585684944}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1540850432
 GameObject:
   m_ObjectHideFlags: 0
@@ -19375,7 +19406,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131492653}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f076e171b0c684f49a99e733c424067b, type: 3}
   m_Name: 
@@ -19383,6 +19414,22 @@ MonoBehaviour:
   animator: {fileID: 5284141778327351652}
   trueBool: Food being cut
   falseBool: Carrying
+--- !u!114 &2131492658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131492653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4aa23868261190409c1db241bdb19d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectAnimated: {fileID: 1155344615}
+  player: {fileID: 5284141778327351652}
+  objectCarried: {fileID: 0}
+  playerGetObject: {fileID: 0}
 --- !u!1 &2134222172 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5530509805206855016, guid: a98587cbc1bc4db4e8a2530785da2a47, type: 3}
