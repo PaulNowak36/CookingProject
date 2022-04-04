@@ -2033,6 +2033,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7675555554693424029, guid: a530542d5cc098a49b96cd4523026d38, type: 3}
   m_PrefabInstance: {fileID: 1585684944}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1110059535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1110059536}
+  m_Layer: 0
+  m_Name: ObjectAppear
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1110059536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110059535}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.963, y: 0.8629999, z: 4.719}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1071792568}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1123316437
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,7 +2561,37 @@ MonoBehaviour:
   objectAnimated: {fileID: 1521210164}
   player: {fileID: 5284141778327351652}
   objectCarried: {fileID: 0}
-  playerGetObject: {fileID: 0}
+  playerGetObject: {fileID: 1437347275}
+--- !u!1 &1276847555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1276847556}
+  m_Layer: 0
+  m_Name: ObjectAppear (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1276847556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276847555}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.963, y: 0.8629999, z: 4.721}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 705766812}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1383582241
 GameObject:
   m_ObjectHideFlags: 0
@@ -2735,7 +2795,7 @@ GameObject:
   - component: {fileID: 1437347274}
   - component: {fileID: 1437347275}
   m_Layer: 8
-  m_Name: ObjectAppear
+  m_Name: ObjectCarried
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19429,7 +19489,7 @@ MonoBehaviour:
   objectAnimated: {fileID: 1155344615}
   player: {fileID: 5284141778327351652}
   objectCarried: {fileID: 0}
-  playerGetObject: {fileID: 0}
+  playerGetObject: {fileID: 1437347275}
 --- !u!1 &2134222172 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5530509805206855016, guid: a98587cbc1bc4db4e8a2530785da2a47, type: 3}

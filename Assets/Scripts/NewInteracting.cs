@@ -9,13 +9,16 @@ public class NewInteracting : MonoBehaviour
     public Animator player;
 
     public GameObject objectCarried;
+    GameObject objectUsing;
+
+    private Transform objectArea;
 
     public PlayerCarryingObject playerGetObject;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        objectArea = transform.parent.Find("ObjectAppear");
     }
 
     // Update is called once per frame
@@ -35,20 +38,65 @@ public class NewInteracting : MonoBehaviour
             }
             if (gameObject.tag == "CuttingBoard")
             {
-                objectAnimated.SetBool("Food being cut", true);
-                player.SetBool("Carrying", false);
-                Invoke("StopCuttingFood", 3.0f);
+                if (objectAnimated.GetBool("Collectable Food") == false && player.GetBool("Carrying") == true )
+                {                    
+                    
+
+                    GameObject objectType = playerGetObject.giveObject();
+                    if (objectType?.GetComponent<Ingredient>().type == IngredientType.Tomato)
+                    {
+                        objectAnimated.SetBool("Food being cut", true);
+                        player.SetBool("Carrying", false);
+                        useObject(objectType);
+                        Invoke("StopCuttingFood", 3.0f);
+                    }
+                    
+
+                    
+                }
+
+                else if (objectAnimated.GetBool("Collectable Food") == true && player.GetBool("Carrying") == false)
+                {
+                    Destroy(objectUsing);
+                    objectAnimated.SetBool("Collectable Food", false);
+                    player.SetBool("Carrying", true);
+                    playerGetObject.getObject(objectCarried);
+                }
             }
             if (gameObject.tag == "Trash")
             {              
                 player.SetBool("Carrying", false);
+                Debug.Log("Thrown to the Trash");
+                Destroy(playerGetObject.giveObject());
             }        
         }
     }
 
     private void StopCuttingFood()
     {
+        replaceObject(objectUsing);
         objectAnimated.SetBool("Food being cut", false);
         objectAnimated.SetBool("Raised Knife", false);
+        objectAnimated.SetBool("Collectable Food", true);
+    }
+
+    public void useObject(GameObject objectTaken)
+    {
+        if (player.GetBool("Carrying") == false && objectUsing == null && objectTaken != null)
+        {
+            Debug.Log("We use an object");
+            objectUsing = objectTaken;
+            objectUsing.transform.SetParent(objectArea);
+            objectUsing.transform.localPosition = new Vector3();
+        }
+    }
+
+    public void replaceObject(GameObject objectSwitched)
+    {
+        Debug.Log("We switch an object with another");
+        Destroy(objectSwitched);
+        objectUsing = Instantiate(objectCarried);
+        objectUsing.transform.SetParent(objectArea);
+        objectUsing.transform.localPosition = new Vector3();
     }
 }

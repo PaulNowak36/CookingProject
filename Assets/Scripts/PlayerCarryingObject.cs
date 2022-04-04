@@ -18,15 +18,14 @@ public class PlayerCarryingObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("e"))
-        {
-            if (animator.GetBool("Carrying") == false)
-            {
-                Debug.Log("Destroyed");
-                Destroy(childObj);
+        //if (Input.GetKeyDown("e"))
+        //{
+        //    if (animator.GetBool("Carrying") == false)
+        //    {
+                
 
-            }
-        }
+        //    }
+        //}
     }
 
     public void getObject(GameObject objectCarried)
@@ -37,6 +36,11 @@ public class PlayerCarryingObject : MonoBehaviour
             childObj.transform.SetParent(transform);
             childObj.transform.localPosition = new Vector3();
         }
+    }
+
+    public GameObject giveObject()
+    {
+        return childObj;
     }
 
 
