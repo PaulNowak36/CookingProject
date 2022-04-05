@@ -1134,8 +1134,8 @@ Transform:
   m_LocalPosition: {x: -0.0057, y: -0.0014, z: 0.016}
   m_LocalScale: {x: 0.03482462, y: 0.031186678, z: 0.03333334}
   m_Children: []
-  m_Father: {fileID: 543450652810609788}
-  m_RootOrder: 4
+  m_Father: {fileID: 847801671}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &387170578 stripped
 Transform:
@@ -1503,7 +1503,7 @@ Transform:
   m_LocalScale: {x: 0.0027210717, y: 0.00001333422, z: 0.00272107}
   m_Children: []
   m_Father: {fileID: 543450652810609788}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!136 &486738702
 CapsuleCollider:
@@ -2435,12 +2435,17 @@ Animator:
   m_Controller: {fileID: 9100000, guid: e4339c081f755844c9ea387dcda2b1fd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &847801671 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1633031731658857527, guid: dd8e78e3b11ed6b4db1f83b880cba465, type: 3}
+  m_PrefabInstance: {fileID: 1633031731075431176}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &903880840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21650,6 +21655,18 @@ PrefabInstance:
     - target: {fileID: 1633031731658857526, guid: dd8e78e3b11ed6b4db1f83b880cba465, type: 3}
       propertyPath: m_Name
       value: Pan
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633031731658857527, guid: dd8e78e3b11ed6b4db1f83b880cba465, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.00521
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633031731658857527, guid: dd8e78e3b11ed6b4db1f83b880cba465, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633031731658857527, guid: dd8e78e3b11ed6b4db1f83b880cba465, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.01524
       objectReference: {fileID: 0}
     - target: {fileID: 1633031731658857527, guid: dd8e78e3b11ed6b4db1f83b880cba465, type: 3}
       propertyPath: m_LocalRotation.w
