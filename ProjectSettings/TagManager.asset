@@ -9,6 +9,7 @@ TagManager:
   - Trash
   - FoodContainer
   - CuttingBoard
+  - Stove
   layers:
   - Default
   - TransparentFX

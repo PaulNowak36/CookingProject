@@ -7,10 +7,15 @@ public class DetectPlayer : MonoBehaviour
     public Animator animator;
     public string boolName = "myBool";
 
+    private GameObject StoveOn;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (gameObject.tag == "Stove")
+        {
+            StoveOn = transform.parent.Find("Red Light").gameObject;
+        }
     }
 
     // Update is called once per frame
@@ -21,11 +26,28 @@ public class DetectPlayer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        animator.SetBool(boolName, true);
+        if (animator != null)
+        {
+            animator.SetBool(boolName, true);
+        }
+        
+
+        if (gameObject.tag == "Stove")
+        {
+            StoveOn.SetActive(true);
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        animator.SetBool(boolName, false);
+        if (animator != null)
+        {
+            animator.SetBool(boolName, false);
+        }
+
+        if (gameObject.tag == "Stove")
+        {
+            StoveOn.SetActive(false);
+        }
     }
 }

@@ -955,6 +955,82 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 659968619145144479, guid: 87d30b43a49d64b8e92c699a1f79e722, type: 3}
   m_PrefabInstance: {fileID: 903880840}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &320993033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 320993034}
+  - component: {fileID: 320993037}
+  - component: {fileID: 320993036}
+  - component: {fileID: 320993035}
+  m_Layer: 0
+  m_Name: DetectionArea
+  m_TagString: Stove
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &320993034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320993033}
+  m_LocalRotation: {x: -0, y: -0.7071067, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: -0.0631, y: -0.024499997, z: 0.0072664935}
+  m_LocalScale: {x: 0.01962124, y: 0.017571516, z: 0.018781003}
+  m_Children: []
+  m_Father: {fileID: 2109188117}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &320993035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320993033}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4aa23868261190409c1db241bdb19d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectAnimated: {fileID: 1521210164}
+  player: {fileID: 5284141778327351652}
+  objectCarried: {fileID: 9162016433364062685, guid: 83572292c4f19b448833f6131ff4a93a, type: 3}
+  playerGetObject: {fileID: 1437347275}
+--- !u!114 &320993036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320993033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 666a70a67dc23894ea66d7c8f860ce99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  boolName: 
+--- !u!65 &320993037
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320993033}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &330659069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1129,6 +1205,82 @@ Transform:
   m_Father: {fileID: 1235960556}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &448759839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 448759840}
+  - component: {fileID: 448759843}
+  - component: {fileID: 448759842}
+  - component: {fileID: 448759841}
+  m_Layer: 0
+  m_Name: DetectionArea
+  m_TagString: Stove
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &448759840
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448759839}
+  m_LocalRotation: {x: -0, y: -0.7071067, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: 0.0206, y: -0.024499997, z: 0.0072664935}
+  m_LocalScale: {x: 0.019621238, y: 0.017571513, z: 0.018781003}
+  m_Children: []
+  m_Father: {fileID: 1464011915}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &448759841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448759839}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4aa23868261190409c1db241bdb19d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectAnimated: {fileID: 1521210164}
+  player: {fileID: 5284141778327351652}
+  objectCarried: {fileID: 9162016433364062685, guid: 83572292c4f19b448833f6131ff4a93a, type: 3}
+  playerGetObject: {fileID: 1437347275}
+--- !u!114 &448759842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448759839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 666a70a67dc23894ea66d7c8f860ce99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  boolName: 
+--- !u!65 &448759843
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448759839}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &448767211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2172,7 +2324,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &786780424
 Transform:
   m_ObjectHideFlags: 0
@@ -3608,6 +3760,7 @@ Transform:
   - {fileID: 651951466}
   - {fileID: 549945647}
   - {fileID: 1296622254}
+  - {fileID: 448759840}
   m_Father: {fileID: 1938970155}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3759,6 +3912,7 @@ Transform:
   - {fileID: 155886713}
   - {fileID: 591111734}
   - {fileID: 559215914}
+  - {fileID: 1980648719}
   m_Father: {fileID: 1938970155}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4941,7 +5095,7 @@ GameObject:
   - component: {fileID: 1951619357}
   m_Layer: 0
   m_Name: DetectionArea
-  m_TagString: CuttingBoard
+  m_TagString: Stove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4989,7 +5143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  boolName: Raised Knife
+  boolName: 
 --- !u!65 &1951619359
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4997,6 +5151,82 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951619355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1980648718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1980648719}
+  - component: {fileID: 1980648722}
+  - component: {fileID: 1980648721}
+  - component: {fileID: 1980648720}
+  m_Layer: 0
+  m_Name: 'DetectionArea '
+  m_TagString: Stove
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1980648719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980648718}
+  m_LocalRotation: {x: -0, y: -0.7071067, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: -0.0217, y: -0.024499997, z: 0.0072664935}
+  m_LocalScale: {x: 0.01962124, y: 0.017571514, z: 0.018781003}
+  m_Children: []
+  m_Father: {fileID: 1505212153}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1980648720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980648718}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4aa23868261190409c1db241bdb19d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectAnimated: {fileID: 1521210164}
+  player: {fileID: 5284141778327351652}
+  objectCarried: {fileID: 9162016433364062685, guid: 83572292c4f19b448833f6131ff4a93a, type: 3}
+  playerGetObject: {fileID: 1437347275}
+--- !u!114 &1980648721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980648718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 666a70a67dc23894ea66d7c8f860ce99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  boolName: 
+--- !u!65 &1980648722
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980648718}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
@@ -19973,6 +20203,7 @@ Transform:
   - {fileID: 2077489468}
   - {fileID: 486738701}
   - {fileID: 299600199}
+  - {fileID: 320993034}
   m_Father: {fileID: 1938970155}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
