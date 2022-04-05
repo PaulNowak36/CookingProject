@@ -68,7 +68,13 @@ public class NewInteracting : MonoBehaviour
                 player.SetBool("Carrying", false);
                 Debug.Log("Thrown to the Trash");
                 Destroy(playerGetObject.giveObject());
-            }        
+            }
+
+            if (gameObject.tag == "Stove")
+            {
+                player.SetBool("Carrying", false);
+                Destroy(playerGetObject.giveObject());
+            }
         }
     }
 
