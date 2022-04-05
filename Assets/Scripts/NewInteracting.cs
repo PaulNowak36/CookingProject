@@ -72,10 +72,27 @@ public class NewInteracting : MonoBehaviour
 
             if (gameObject.tag == "Stove")
             {
-                player.SetBool("Carrying", false);
-                Destroy(playerGetObject.giveObject());
+                if (objectAnimated.GetBool("Collectable Steak") == false && player.GetBool("Carrying") == true)
+                {
+                    GameObject steakType = playerGetObject.giveObject();
+                    if (steakType?.GetComponent<Ingredient>().type == IngredientType.Steak)
+                    {
+                        objectAnimated.SetBool("Steak is frying", true);
+                        player.SetBool("Carrying", false);
+                        useObject(steakType);
+                        Invoke("StopFryingSteak", 10.0f);
+                    }
+                }
+
+                else if (objectAnimated.GetBool("Collectable Steak") == true && player.GetBool("Carrying") == false)
+                {
+                    Destroy(objectUsing);
+                    objectAnimated.SetBool("Collectable Steak", false);
+                    player.SetBool("Carrying", true);
+                    playerGetObject.getObject(objectCarried);
+                }
             }
-        }
+        }   
     }
 
     private void StopCuttingFood()
@@ -84,6 +101,14 @@ public class NewInteracting : MonoBehaviour
         objectAnimated.SetBool("Food being cut", false);
         objectAnimated.SetBool("Raised Knife", false);
         objectAnimated.SetBool("Collectable Food", true);
+    }
+
+    private void StopFryingSteak()
+    {
+        replaceObject(objectUsing);
+        objectAnimated.SetBool("Steak is frying", false);
+        objectAnimated.SetBool("Pan turned", false);
+        objectAnimated.SetBool("Collectable Steak", true);
     }
 
     public void useObject(GameObject objectTaken)

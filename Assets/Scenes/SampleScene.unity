@@ -2435,7 +2435,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: e4339c081f755844c9ea387dcda2b1fd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -5110,14 +5110,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951619355}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4aa23868261190409c1db241bdb19d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectAnimated: {fileID: 1521210164}
+  objectAnimated: {fileID: 847801668}
   player: {fileID: 5284141778327351652}
-  objectCarried: {fileID: 9162016433364062685, guid: 83572292c4f19b448833f6131ff4a93a, type: 3}
+  objectCarried: {fileID: 2056317061125018463, guid: da1564b5d72ffb744a1cfc62ea4bd5f7, type: 3}
   playerGetObject: {fileID: 1437347275}
 --- !u!114 &1951619358
 MonoBehaviour:
