@@ -88,6 +88,7 @@ public class NewInteracting : MonoBehaviour
                 {
                     Destroy(objectUsing);
                     objectAnimated.SetBool("Collectable Steak", false);
+                    objectAnimated.SetBool("Pan turned", false);
                     player.SetBool("Carrying", true);
                     playerGetObject.getObject(objectCarried);
                 }
@@ -107,7 +108,6 @@ public class NewInteracting : MonoBehaviour
     {
         replaceObject(objectUsing);
         objectAnimated.SetBool("Steak is frying", false);
-        objectAnimated.SetBool("Pan turned", false);
         objectAnimated.SetBool("Collectable Steak", true);
     }
 

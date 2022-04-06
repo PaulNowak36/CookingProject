@@ -5,7 +5,7 @@ using UnityEngine;
 public class DetectPlayer : MonoBehaviour
 {
     public Animator animator;
-    public string boolName = "myBool";
+    //public string boolName = "myBool";
 
     private GameObject StoveOn;
 
@@ -26,28 +26,51 @@ public class DetectPlayer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (animator != null)
-        {
-            animator.SetBool(boolName, true);
-        }
+        //if (animator != null)
+        //{
+        //    animator.SetBool(boolName, true);
+        //}
         
 
         if (gameObject.tag == "Stove")
         {
             StoveOn.SetActive(true);
+            animator.SetBool("Pan Turned", true);
         }
+
+        if (gameObject.tag == "Trash")
+        {
+            animator.SetBool("TrashOpen", true);
+        }
+
+        if (gameObject.tag == "CuttingBoard")
+        {
+            animator.SetBool("Raised Knife", true);
+        }
+
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (animator != null)
-        {
-            animator.SetBool(boolName, false);
-        }
+        //if (animator != null)
+        //{
+        //    animator.SetBool(boolName, false);
+        //}
 
         if (gameObject.tag == "Stove")
         {
             StoveOn.SetActive(false);
+            animator.SetBool("Pan Turned", false);
+        }
+
+        if (gameObject.tag == "Trash")
+        {
+            animator.SetBool("TrashOpen", false);
+        }
+
+        if (gameObject.tag == "CuttingBoard")
+        {
+            animator.SetBool("Raised Knife", false);
         }
     }
 }
