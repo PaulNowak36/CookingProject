@@ -11,14 +11,16 @@ public class NewInteracting : MonoBehaviour
     public GameObject objectCarried;
     GameObject objectUsing;
 
-    private Transform objectArea;
+    public Transform objectArea;
 
     public PlayerCarryingObject playerGetObject;
 
     // Start is called before the first frame update
     void Start()
     {
-        objectArea = transform.parent.Find("ObjectAppear");
+        //objectArea = transform.parent.Find("ObjectAppear");
+
+        //steakArea = transform.parent.Find("/Pan/ObjectAppear");
     }
 
     // Update is called once per frame
