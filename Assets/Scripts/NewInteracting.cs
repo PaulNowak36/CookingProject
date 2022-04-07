@@ -18,7 +18,7 @@ public class NewInteracting : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //objectArea = transform.parent.Find("ObjectAppear");
+        objectArea = transform.parent.Find("ObjectAppear");
 
         //steakArea = transform.parent.Find("/Pan/ObjectAppear");
     }

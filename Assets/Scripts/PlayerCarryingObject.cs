@@ -41,7 +41,15 @@ public class PlayerCarryingObject : MonoBehaviour
     public GameObject giveObject()
     {
         return childObj;
+        //childObj = null;
     }
 
+    //public void releaseObject(GameObject objectReleased)
+    //{
+    //    if (animator.GetBool("Carrying") == false)
+    //    {
+    //        objectReleased = null;
+    //    }
+    //}
 
 }
